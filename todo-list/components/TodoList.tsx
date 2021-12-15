@@ -84,7 +84,7 @@ const TodoList: FunctionComponent = () => {
     }
   }, [todos, socket]);
   //* Push one todo to firebase
-  const handleClick = () => {
+  const handleClick = (e: any) => {
     if (!socket) return;
     if (todo.todo !== "") {
       socket.emit("todo-event", todo);
@@ -111,8 +111,8 @@ const TodoList: FunctionComponent = () => {
   };
   const handleKeyPress = (e: any) => {
     if (e.key === "Enter" && e.target.value !== "") {
-      e.target.value = "";
-      handleClick();
+      // e.target.value = "";
+      handleClick(e);
       setTodo({ todo: "", id: "", done: false, username: "" });
     }
   };
@@ -176,14 +176,16 @@ const TodoList: FunctionComponent = () => {
           <ul className={styles.todo}>
             <li className={styles.todoInput}>
               <input
+                value={todo.todo}
+                id="todoInput"
                 type="text"
                 onChange={handleChange}
                 onKeyPress={handleKeyPress}
               />
             </li>
             <li className={styles.todoButton}>
-              <button onClick={handleClick}>
-                <i className="far fa-plus-square"></i>
+              <button id="addTodoBtn" onClick={handleClick}>
+                <i id="addTodoI" className="far fa-plus-square"></i>
               </button>
             </li>
           </ul>
