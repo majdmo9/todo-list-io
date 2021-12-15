@@ -1,0 +1,86 @@
+.login h1 {
+  color: #bbbbbb;
+  font-size: 5vw;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  background-color: #03506f;
+  height: 70vh;
+  border-radius: 8px;
+  border: 2px solid #bbbbbb;
+  margin: auto;
+  margin-bottom: 10vh;
+}
+.loginInput {
+  width: 85%;
+  height: 7vh;
+  display: flex;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid #bbbbbb;
+  border-left: none;
+  font-size: 1.88em;
+  color: #ffe3d8;
+  padding: 1rem;
+  background-color: #0a043c;
+}
+.inputContainer {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputDiv {
+  display: flex;
+  width: 95%;
+  background-color: #0a043c;
+  height: 7vh;
+  border-radius: 8px;
+  justify-content: space-around;
+  align-items: center;
+}
+.loginButton:hover {
+  border: 2px solid #03506f;
+  color: #03506f;
+}
+.loginButton {
+  border-radius: 8px;
+  border: 2px solid #bbbbbb;
+  color: #bbbbbb;
+  background-color: #0a043c;
+  height: 8vh;
+  width: 40%;
+  display: flex;
+  margin: auto;
+  justify-self: center;
+  align-self: center;
+  justify-content: space-around;
+  align-items: center;
+  transition: 350ms ease;
+  font-size: 2vw;
+  cursor: pointer;
+}
+.inputLabel {
+  color: #bbbbbb;
+  font-size: 1.5vw;
+  display: flex;
+  margin-left: 0.5vw;
+}
+.buttonsDiv {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+
+  align-items: center;
+  margin: auto;
+}

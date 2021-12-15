@@ -1,0 +1,63 @@
+{
+  "name": "y",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "paths": {
+    "crypto": [
+      "node_modules/crypto-js"
+    ],
+    "stream": [
+      "node_modules/stream-browserify"
+    ]
+  },
+  "dependencies": {
+    "@types/socket.io-client": "^3.0.0",
+    "@types/uuid": "^8.3.3",
+    "apexcharts": "^3.32.0",
+    "crypto": "^1.0.1",
+    "dotenv": "^10.0.0",
+    "electron": "^16.0.4",
+    "firebase": "^8.6.5",
+    "firebase-admin": "^10.0.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "http-browserify": "^1.7.0",
+    "https-browserify": "^1.0.0",
+    "next": "^12.0.7",
+    "nookies": "^2.5.2",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "querystring": "^0.2.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "socket.io-client": "^4.4.0",
+    "stream": "0.0.2",
+    "uuid": "^8.3.2",
+    "zlib": "^1.0.5",
+    "zlib-browserify": "0.0.3"
+  },
+  "devDependencies": {
+    "@types/firebase": "^3.2.1",
+    "@types/node": "16.11.10",
+    "@types/react": "17.0.37",
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.4",
+    "typescript": "4.5.2"
+  },
+  "browser": {
+    "crypto": false,
+    "fs": false,
+    "os": false
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "version": "1.0.0",
+  "main": "next.config.js",
+  "author": "",
+  "license": "ISC",
+  "keywords": []
+}

@@ -1,0 +1,48 @@
+.loginButton:hover {
+  border: 2px solid #03506f;
+  color: #0a043c;
+}
+.loginButton {
+  border-radius: 8px;
+  border: 2px solid #bbbbbb;
+  color: #bbbbbb;
+  background-color: #03506f;
+  height: 8vh;
+  width: 15%;
+  display: flex;
+  margin: auto;
+  justify-self: center;
+  align-self: center;
+  justify-content: space-around;
+  align-items: center;
+  transition: 350ms ease;
+  font-size: 2vw;
+  cursor: pointer;
+  text-align: center;
+}
+.authenticatedDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  height: 20vh;
+  margin-top: -4vh;
+}
+.authH1 {
+  font-size: 2vw;
+  color: #bbbbbb;
+  font-weight: 600;
+  margin: auto;
+  text-align: center;
+}
+.sessionDiv {
+  width: 40%;
+  display: flex;
+  background-color: #03506f;
+  border-radius: 8px;
+  height: 8vh;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
