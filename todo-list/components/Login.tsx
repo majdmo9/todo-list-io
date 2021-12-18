@@ -4,6 +4,7 @@ interface IProps {
   handleLogIn: () => void;
   handleRegister: () => void;
   handleUserChange: (e: any) => void;
+  handleKeyPress: (e: any) => void;
   username: string;
   password: string;
 }
@@ -15,6 +16,7 @@ const Login: FunctionComponent<IProps> = ({
   handleLogIn,
   handleRegister,
   handleUserChange,
+  handleKeyPress,
   username,
   password,
 }) => {
@@ -44,6 +46,7 @@ const Login: FunctionComponent<IProps> = ({
             type="password"
             onChange={handleUserChange}
             className={styles.loginInput}
+            onKeyPress={handleKeyPress}
           />
         </div>
       </div>

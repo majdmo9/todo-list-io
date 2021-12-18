@@ -25,19 +25,24 @@
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  width: 90%;
+  width: 100%;
   height: 20vh;
   margin-top: -4vh;
 }
 .authH1 {
   font-size: 2vw;
-  color: #bbbbbb;
+  color: #ffe3d8;
+  background-color: #0a043c;
   font-weight: 600;
   margin: auto;
   text-align: center;
+  width: 40%;
+  border-radius: 8px;
+  height: 6vh;
+  border: 2px solid #ffe3d8;
 }
 .sessionDiv {
-  width: 40%;
+  width: 70%;
   display: flex;
   background-color: #03506f;
   border-radius: 8px;
@@ -45,4 +50,46 @@
   margin: auto;
   justify-content: space-around;
   align-items: center;
+  border: 2px solid #ffe3d8;
+}
+.dateInput {
+  width: 40%;
+  display: flex;
+  margin: auto;
+  font-size: 1.5vw;
+  height: 6vh;
+  border-radius: 8px;
+  background-color: #0a043c;
+  color: #ffe3d8;
+  align-items: center;
+  font-weight: 600;
+  cursor: text;
+  border: solid 2px #ffe3d8;
+}
+.dateInput::-webkit-calendar-picker-indicator {
+  filter: invert();
+  cursor: pointer;
+}
+.loadingSpinner {
+  color: #ffe3d8;
+  font-size: 5vw;
+  margin: auto;
+  animation: spinner 2s linear infinite;
+}
+.loadingDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

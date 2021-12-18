@@ -3,12 +3,14 @@ import styles from "../styles/Register.module.css";
 interface IProps {
   handleLogIn: () => void;
   handleUserChange: (e: any) => void;
+  handleKeyPress: (e: any) => void;
   username: string;
   password: string;
 }
 const Rigester: FunctionComponent<IProps> = ({
   handleLogIn,
   handleUserChange,
+  handleKeyPress,
   username,
   password,
 }) => {
@@ -37,6 +39,7 @@ const Rigester: FunctionComponent<IProps> = ({
             name="password"
             type="password"
             className={styles.loginInput}
+            onKeyPress={handleKeyPress}
             value={password}
           />
         </div>

@@ -85,3 +85,26 @@
 .todo i:hover {
   color: #03506f;
 }
+.loadingSpinner {
+  color: #ffe3d8;
+  font-size: 5vw;
+  margin: auto;
+  animation: spinner 2s linear infinite;
+}
+.loadingDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

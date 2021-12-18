@@ -1,43 +1,42 @@
 import React from "react";
-// import nookies from "nookies";
-// import { verifyIdToken } from "./firebaseAdmin";
-import firebase from "../database/firebase";
 import styles from "../styles/authenticated.module.css";
-const Authenticated = ({ session }: any) => {
-  const logOut = () => {
-    firebase.auth().signOut();
-  };
+const Authenticated = ({
+  session,
+  handleSelectChange,
+  handleDateChange,
+  date,
+}: any) => {
   const Session = session?.substring(0, session.indexOf("@"));
   if (session) {
     return (
       <div className={styles.authenticatedDiv}>
         <div className={styles.sessionDiv}>
-          <p className={styles.authH1}>{Session}</p>
+          <select
+            name=""
+            id=""
+            className={styles.authH1}
+            onChange={handleSelectChange}
+          >
+            <option value="">{Session}</option>
+            <option value="logout">Log Out</option>
+            <option value="updatePass">Update Password</option>
+          </select>
+          <input
+            value={date}
+            type="date"
+            onChange={handleDateChange}
+            className={styles.dateInput}
+          />
         </div>
-        <button className={styles.loginButton} onClick={logOut}>
-          Log Out
-        </button>
       </div>
     );
   } else {
-    return <h1>Loading</h1>;
+    return (
+      <div className={styles.loadingDiv}>
+        <i className={`fas fa-spinner ${styles.loadingSpinner}`}></i>
+      </div>
+    );
   }
 };
-// export const getServerSideProps = async (context: any) => {
-//   try {
-//     const cookies = nookies.get(context);
-//     const token = await verifyIdToken(cookies.token);
-//     console.log(token);
 
-//     // const { uid, email } = token;
-//     // return {
-//     //   props: { session: `Your email is ${email} and your id is ${uid}` },
-//     // };
-//   } catch (err) {
-//     context.res.end();
-//     return {
-//       props: {},
-//     };
-//   }
-// };
 export default Authenticated;
