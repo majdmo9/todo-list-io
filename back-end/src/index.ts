@@ -8,7 +8,7 @@ const cors = require("cors");
 
 const io = require("socket.io")(ioPORT, {
   cors: {
-    origin: ["http://localhost:3000", "http://192.168.1.249:3000"],
+    origin: ["http://localhost:3000", "http://192.168.1.12:3000"],
     methods: ["GET", "POST"],
     credentials: true,
   },

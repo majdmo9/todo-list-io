@@ -78,7 +78,7 @@ const TodoList: FunctionComponent = () => {
 
   //* make new connection on connect
   useEffect(() => {
-    const socket = io("http://localhost:3005");
+    const socket = io("http://192.168.1.12:3005");
     setSocket(socket);
   }, []);
   //* Append on todos on new todo
